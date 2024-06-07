@@ -11,16 +11,20 @@ class ProductDetailsPage extends StatelessWidget {
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: Text('Details of ${product['name']}'),
-        backgroundColor: Colors.purple,
+        backgroundColor: const Color.fromARGB(255, 206, 196, 206),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset(product['image'] ?? 'assets/default.png'),
+            Image.asset(
+              product['image'] ?? 'assets/default.png',
+              width: 100,
+              height: 100,
+            ),
             const SizedBox(height: 20),
             Text(
-              'Here are more details about ${product['name']}.',
+              'Price is Negotiable for this ${product['name']}.',
               style: const TextStyle(fontSize: 18),
             ),
           ],

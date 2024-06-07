@@ -90,7 +90,7 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
   assets:
-  - assets/product1.jpg
-  - assets/product2.jpg
-  - assets/product3.jpg
+  - assets/Earrings.jpg
+  - assets/Neckles.jpg
+  - assets/Neckles grey.jpg
   - assets/default.png

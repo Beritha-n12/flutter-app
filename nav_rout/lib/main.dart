@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nav_rout/Page/homepage.dart';
+import 'package:nav_rout/Page/productpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      // ignore: prefer_const_constructors
-      home: HomePage(),
+      home: const HomePage(),
+      routes: {
+        '/products': (context) => ProductPage(
+              product: const {''},
+            ),
+      },
     );
   }
 }
