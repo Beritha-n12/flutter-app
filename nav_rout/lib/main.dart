@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lets_route/secreens/firstpage.dart';
-import 'package:lets_route/secreens/homepage.dart';
+import 'package:nav_rout/Secreens/homepage.dart';
+import 'package:nav_rout/Secreens/firstpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Color(0xFF00A89B),
+            backgroundColor: const Color(0xFF00A89B),
             foregroundColor: Colors.white,
           ),
         ),
