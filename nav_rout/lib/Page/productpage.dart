@@ -3,7 +3,7 @@ import 'package:nav_rout/Page/productdetails.dart';
 
 class ProductPage extends StatelessWidget {
   final List<Map<String, String>> products = [
-    {'name': 'Earrings', 'image': 'assets/Earrings.jpg'},
+    {'name': 'Earring', 'image': 'assets/Earrings.jpg'},
     {'name': 'Neckles Red', 'image': 'assets/Neckles.jpg'},
     {'name': 'Neckless Grey', 'image': 'assets/Neckles grey.jpg'}
   ];

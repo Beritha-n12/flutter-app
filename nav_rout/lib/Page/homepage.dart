@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
             Navigator.pushNamed(context, '/products');
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color.fromARGB(255, 170, 162, 172),
+            backgroundColor: const Color.fromRGBO(248, 246, 248, 1),
           ),
           child: const Text('Go to Product List'),
         ),
