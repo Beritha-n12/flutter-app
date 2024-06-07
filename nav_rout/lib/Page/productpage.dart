@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'productdetails.dart';
+import 'package:nav_rout/Page/productdetails.dart';
 
 class ProductPage extends StatelessWidget {
   final Map<String, String> product;
 
-  ProductPage({required this.product});
+  const ProductPage({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {
@@ -19,14 +19,13 @@ class ProductPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(product['image'] ?? 'assets/default.png'),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
               'Details of ${product['name']}',
-              style: TextStyle(fontSize: 24),
+              style: const TextStyle(fontSize: 24),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
-              child: Text('View More Details'),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -36,8 +35,9 @@ class ProductPage extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                primary: Colors.purple,
+                backgroundColor: Colors.purple,
               ),
+              child: const Text('View More Details'),
             ),
           ],
         ),

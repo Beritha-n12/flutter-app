@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ProductDetailsPage extends StatelessWidget {
   final Map<String, String> product;
 
-  ProductDetailsPage({required this.product});
+  const ProductDetailsPage({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +18,10 @@ class ProductDetailsPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(product['image'] ?? 'assets/default.png'),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
               'Here are more details about ${product['name']}.',
-              style: TextStyle(fontSize: 18),
+              style: const TextStyle(fontSize: 18),
             ),
           ],
         ),
