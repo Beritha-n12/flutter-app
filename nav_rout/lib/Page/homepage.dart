@@ -3,9 +3,9 @@ import 'package:nav_rout/Page/productpage.dart';
 
 class HomePage extends StatelessWidget {
   final List<Map<String, String>> products = [
-    {'name': 'Product 1', 'image': 'assets/Earrings.jpg'},
-    {'name': 'Product 2', 'image': 'assets/Neckles.jpg'},
-    {'name': 'Product 3', 'image': 'assets/Neckles grey.jpg'},
+    {'name': 'Earrings.jpg', 'image': 'assets/Earrings.jpg'},
+    {'name': 'Neckles.jpg', 'image': 'assets/Neckles.jpg'},
+    {'name': 'Neckles grey.jpg', 'image': 'assets/Neckles grey.jpg'},
   ];
 
   HomePage({super.key});
